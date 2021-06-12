@@ -265,10 +265,26 @@ body {
   background: pink;
 }
 
-video {
-  height: auto;
-  width: 100%;
+.background {
+  height: 100vh;
   z-index: -99;
+}
+
+.video-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+
+  /*height: auto;*/
+  width: 100%;
+  /*z-index: -99;*/
 }
 
 .content {
@@ -281,10 +297,11 @@ video {
     position: absolute;
     width: 100%;
     margin: 0 auto;
+    z-index: 1;
 }
 
 .center p {
-    font-size: 2em;
+  font-size: 1.5em;
     padding: 0;
     margin: 0;
 }
@@ -328,6 +345,7 @@ margin: 0 1em;
 
 footer p {
   font-size: 2em;
+  margin-top: 0;
 }
 
 @media (min-width: 768px) {
@@ -342,6 +360,10 @@ footer p {
   .center {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .center p {
+    font-size: 2em;
   }
 
   .copy-group {
