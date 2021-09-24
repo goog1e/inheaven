@@ -14,9 +14,9 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/boilerplate.css">
   <link rel="stylesheet" href="css/style.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -25,32 +25,37 @@
 <body>
   <div class="content">
     <header>
-        <div class="top-row"><h2>Studio Visit</h2></div>
-        <div class="center">
-            <div class="copy-group">
-              <p>Price: Bespoke</p>
-              <p>Inquire: <a href="mailto:workingartist@protonmail.com">workingartist@protonmail.com</a></p>    
-            </div>
-        <div>
-    </header>
-    <footer>
-      <div class="left">
-      <h1>In Heaven</h1>
+      <div>
+        <p>SOPHIA GIOVANNITTI x TOURMALINE</p>
       </div>
-      <div class="right">
-      <p>every image is an invitation</p>
-    </div>
+    </header>
+
+    <main>
+      <div class="copy-group">
+        <p class="it">Studio Visit</p>
+        <br />
+        <br />
+        <p><span class="it">Price</span> bespoke</p>
+        <p><span class="it">Inquire</span> <a
+            href="mailto:workingartist@protonmail.com">workingartist@protonmail.com</a></p>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <p>every image is an invitation</p>
+      </div>
     </footer>
   </div>
 
   <section class="background">
     <div class="video-container">
-  <video autoplay="autoplay" playsinline muted loop disablePictureInPicture poster="media/poster.png">
-    <source src="media/heaven2.webm" type="video/webm">
-    <source src="media/heaven2.mp4" type="video/mp4">
-    <source src="media/heaven2.ogv" type="video/ogv">
-  </video>
-  </div>
+      <video autoplay="autoplay" playsinline muted loop disablePictureInPicture poster="media/poster.png">
+        <source src="media/heaven2.webm" type="video/webm">
+        <source src="media/heaven2.mp4" type="video/mp4">
+        <source src="media/heaven2.ogv" type="video/ogv">
+      </video>
+    </div>
   </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -71,14 +76,14 @@
   </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FRQLGQKLRD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRQLGQKLRD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-FRQLGQKLRD');
-</script>
+    gtag('config', 'G-FRQLGQKLRD');
+  </script>
 </body>
 
 </html>
